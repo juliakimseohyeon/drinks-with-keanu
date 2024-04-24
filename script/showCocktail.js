@@ -1,19 +1,3 @@
-console.log("hello JavaScript ✨");
-
-async function getCocktail() {
-  try {
-    const response = await axios.get(
-      "https://www.thecocktaildb.com/api/json/v1/1/random.php"
-    );
-    return response.data.drinks[0];
-    console.log(cocktail);
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-getCocktail();
-
 const cocktailDiv = document.querySelector(".cocktail");
 const cocktailTitle = document.querySelector(".cocktail__title");
 const cocktailImage = document.querySelector(".cocktail__image");
@@ -33,15 +17,16 @@ async function showCocktail() {
     let ingredients = [];
     for (let i = 1; i <= 15; i++) {
       const ingredient = cocktail[`strIngredient${i}`];
-      if(ingredient){
+      if (ingredient) {
         ingredients.push(ingredient);
       }
     }
-    ingredients.forEach(ingredient => {
+    ingredients.forEach((ingredient) => {
       console.log(ingredient);
       cocktailIngredients.innerText += `${ingredient},`;
     });
 
+    console.log(ingredients);
     cocktailInstructions.innerText = cocktail.strInstructions;
   } catch (error) {
     console.error(error);
@@ -50,13 +35,4 @@ async function showCocktail() {
 
 showCocktail();
 
-async function getKeanu() {
-  try {
-    const response = await axios.get("https://placekeanu.com/400/400/");
-    console.log(response);
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-getKeanu();
+export default showCocktail;
