@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 20rem;
+  background: #e73c7e;
+  padding: 1.5rem;
+  border-radius: 35px;
+  color: #fefdfc;
+  border: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.btn:hover, .btn:active {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+div {
+  background-color: rgba(254, 253, 252, 0.5);
+  width: 80vw;
+  height: 50vw;
+}
+
+@media (min-width: 1280px) {
+  div {
+    width: 50vw;
+  }
+}/*# sourceMappingURL=index.css.map */
