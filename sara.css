@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cocktail {
+    background-image: url("https://placekeanu.com/1000/1000/");
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    line-height:  0;
+}
