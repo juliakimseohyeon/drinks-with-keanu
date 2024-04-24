@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   display: flex;
@@ -11,6 +12,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   color: #323232;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ul {
@@ -35,7 +39,7 @@ ul {
 .btn {
   background: #e73c7e;
   padding: 1.5rem 2rem;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 5rem;
   border-radius: 35px;
   color: #fefdfc;
@@ -96,4 +100,8 @@ ul {
 }
 .cocktail__measure {
   padding: 1rem;
+}
+
+.display-none {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

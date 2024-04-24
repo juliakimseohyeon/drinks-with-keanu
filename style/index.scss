@@ -1,6 +1,7 @@
 @use "./partials/variables" as *;
 
 body {
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   display: flex;
@@ -13,6 +14,9 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   color: $color-font-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ul {
@@ -37,7 +41,7 @@ ul {
 .btn {
   background: $color-primary;
   padding: 1.5rem 2rem;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 5rem;
   border-radius: 35px;
   color: $color-secondary;
@@ -115,3 +119,7 @@ ul {
 //     width: 50vw;
 //   }
 // }
+
+.display-none {
+  display: none;
+}
