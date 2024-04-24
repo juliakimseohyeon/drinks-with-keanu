@@ -30,13 +30,18 @@ async function showCocktail() {
     cocktailImage.src = cocktail.strDrinkThumb;
     cocktailGlass.innerText = cocktail.strGlass;
 
-    const ingredients = [];
-    for (let i = 1; i < 16; i++) {
-      const ingredient = `cocktail.strIngredient${i}`;
-      ingredients.push(ingredient);
+    let ingredients = [];
+    for (let i = 1; i <= 15; i++) {
+      const ingredient = cocktail[`strIngredient${i}`];
+      if(ingredient){
+        ingredients.push(ingredient);
+      }
     }
+    ingredients.forEach(ingredient => {
+      console.log(ingredient);
+      cocktailIngredients.innerText += `${ingredient},`;
+    });
 
-    console.log(ingredients);
     cocktailInstructions.innerText = cocktail.strInstructions;
   } catch (error) {
     console.error(error);
