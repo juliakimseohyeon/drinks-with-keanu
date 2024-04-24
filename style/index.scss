@@ -38,6 +38,7 @@ ul {
   background: $color-primary;
   padding: 1.5rem 2rem;
   margin: 1rem;
+  margin-bottom: 5rem;
   border-radius: 35px;
   color: $color-secondary;
   border: none;
@@ -70,6 +71,8 @@ ul {
 .cocktail {
   margin: 2rem 4rem;
   padding: 4rem;
+  min-width: 40vw;
+  max-width: 600px;
   border-radius: 16px;
   background-color: rgba($color-secondary, 0.5);
   display: flex;
@@ -107,8 +110,8 @@ ul {
   }
 }
 
-@media (min-width: $desktop-width) {
-  div {
-    width: 50vw;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   div {
+//     width: 50vw;
+//   }
+// }

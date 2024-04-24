@@ -36,6 +36,7 @@ ul {
   background: #e73c7e;
   padding: 1.5rem 2rem;
   margin: 1rem;
+  margin-bottom: 5rem;
   border-radius: 35px;
   color: #fefdfc;
   border: none;
@@ -61,6 +62,8 @@ ul {
 .cocktail {
   margin: 2rem 4rem;
   padding: 4rem;
+  min-width: 40vw;
+  max-width: 600px;
   border-radius: 16px;
   background-color: rgba(254, 253, 252, 0.5);
   display: flex;
@@ -93,10 +96,4 @@ ul {
 }
 .cocktail__measure {
   padding: 1rem;
-}
-
-@media (min-width: 1280px) {
-  div {
-    width: 50vw;
-  }
 }/*# sourceMappingURL=index.css.map */
