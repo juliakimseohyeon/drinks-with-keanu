@@ -21,16 +21,28 @@ ul {
   padding: 0;
 }
 
+.site-header {
+  background-color: rgba($color-primary, 0.5);
+  width: 100%;
+  padding: 2rem;
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    color: $color-secondary;
+    margin: 2rem 0;
+    line-height: 0;
+  }
+}
+
 .btn {
-  width: 20rem;
   background: $color-primary;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   margin: 1rem;
   border-radius: 35px;
   color: $color-secondary;
   border: none;
-  font-size: 14px;
-  transition: 0.2s;
+  font-size: 1.2rem;
+  transition: background 0.4s;
   &:hover,
   &:active {
     background: linear-gradient(
@@ -52,19 +64,6 @@ ul {
     100% {
       background-position: 0% 50%;
     }
-  }
-}
-
-.site-header {
-  background-color: $color-primary;
-  width: 100%;
-  padding: 2rem;
-  &__title {
-    font-size: 3rem;
-    text-align: center;
-    color: $color-secondary;
-    margin: 2rem 0;
-    line-height: 0;
   }
 }
 

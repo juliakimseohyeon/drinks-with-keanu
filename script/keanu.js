@@ -11,7 +11,7 @@ function generateRandomKeanu() {
 async function getKeanu() {
   try {
     const response = await axios.get(
-      `https://cors-anywhere.herokuapp.com/https://placekeanu.com/${generateRandomKeanu()}/${generateRandomKeanu()}`
+      `https://corsproxy.io/?https://placekeanu.com/${generateRandomKeanu()}/${generateRandomKeanu()}`
     );
     const keanuImgUrl = response.config.url;
     backgroundEl.style.backgroundImage = `url('${keanuImgUrl}')`;

@@ -5,7 +5,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("https://placekeanu.com/600/800/");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,16 +19,28 @@ ul {
   padding: 0;
 }
 
+.site-header {
+  background-color: rgba(231, 60, 126, 0.5);
+  width: 100%;
+  padding: 2rem;
+}
+.site-header__title {
+  font-size: 3rem;
+  text-align: center;
+  color: #fefdfc;
+  margin: 2rem 0;
+  line-height: 0;
+}
+
 .btn {
-  width: 20rem;
   background: #e73c7e;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   margin: 1rem;
   border-radius: 35px;
   color: #fefdfc;
   border: none;
-  font-size: 14px;
-  transition: 0.2s;
+  font-size: 1.2rem;
+  transition: background 0.4s;
 }
 .btn:hover, .btn:active {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -45,19 +56,6 @@ ul {
   100% {
     background-position: 0% 50%;
   }
-}
-
-.site-header {
-  background-color: #e73c7e;
-  width: 100%;
-  padding: 2rem;
-}
-.site-header__title {
-  font-size: 3rem;
-  text-align: center;
-  color: #fefdfc;
-  margin: 2rem 0;
-  line-height: 0;
 }
 
 .cocktail {
