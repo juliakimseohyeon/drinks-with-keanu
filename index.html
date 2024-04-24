@@ -4,11 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drinks with Keanu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/index.css" />
   </head>
   <body>
-    <h1>Drinks with Keanu</h1>
-    <div></div>
+    <header class="site-header">
+      <h1 class="site-header__title">Drinks with Keanu</h1>
+    </header>
+
+    <div class="cocktail">
+      <h2 class="cocktail__title">Cocktail Title</h2>
+      <img
+        class="cocktail__image"
+        src="https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="cocktail"
+      />
+
+      <p class="cocktail__glass">
+        Recommended Glass: <span>Cocktail Glass</span>
+      </p>
+
+      <h3 class="cocktail__subtitle">Ingredients</h3>
+      <div class="cocktail__ingredients-section">
+        <ul class="cocktail__ingredients">
+          <li class="cocktail__ingredient">Ingredient1</li>
+          <li class="cocktail__ingredient">Ingredient2</li>
+          <li class="cocktail__ingredient">Ingredient3</li>
+          <li class="cocktail__ingredient">Ingredient4</li>
+          <li class="cocktail__ingredient">Ingredient5</li>
+        </ul>
+        <ul class="cocktail__measurement">
+          <li class="cocktail__measure">Measure1</li>
+          <li class="cocktail__measure">Measure2</li>
+          <li class="cocktail__measure">Measure3</li>
+          <li class="cocktail__measure">Measure4</li>
+          <li class="cocktail__measure">Measure5</li>
+        </ul>
+      </div>
+      <h3 class="cocktail__subtitle">Instructions</h3>
+      <p class="cocktail__instructions">
+        Pour the vodka, gin, rum, tequila, Triple Sec, and lemon juice into the
+        shaker. Cover and shake vigorously to combine and chill. Pour the
+        mixture, ice and all, into 2 glasses or beer mugs and top off with the
+        cola. Garnish with lemon wedges.
+      </p>
+    </div>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <button class="btn">HAVE A DRINK WITH KEANU</button>
+    <button class="btn">HAVE ANOTHER DRINK WITH KEANU</button>
   </body>
 </html>

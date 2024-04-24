@@ -5,12 +5,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("https://placekeanu.com/600/800/");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: #323232;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
   width: 20rem;
   background: #e73c7e;
   padding: 1.5rem;
+  margin: 1rem;
   border-radius: 35px;
   color: #fefdfc;
   border: none;
@@ -33,10 +47,54 @@ body {
   }
 }
 
-div {
+.site-header {
+  background-color: #e73c7e;
+  width: 100%;
+  padding: 2rem;
+}
+.site-header__title {
+  font-size: 3rem;
+  text-align: center;
+  color: #fefdfc;
+  margin: 2rem 0;
+  line-height: 0;
+}
+
+.cocktail {
+  margin: 2rem 4rem;
+  padding: 4rem;
+  border-radius: 16px;
   background-color: rgba(254, 253, 252, 0.5);
-  width: 80vw;
-  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cocktail__title {
+  font-size: 2rem;
+}
+.cocktail__image {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.cocktail__glass {
+  font-weight: bold;
+}
+.cocktail__glass span {
+  font-weight: normal;
+}
+.cocktail__ingredients-section {
+  display: flex;
+}
+.cocktail__ingredient {
+  padding: 1rem;
+}
+.cocktail__measure {
+  padding: 1rem;
 }
 
 @media (min-width: 1280px) {

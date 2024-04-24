@@ -7,11 +7,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("https://placekeanu.com/600/800/");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: $color-font-primary;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .btn {
   width: 20rem;
   background: $color-primary;
   padding: 1.5rem;
+  margin: 1rem;
   border-radius: 35px;
   color: $color-secondary;
   border: none;
@@ -41,11 +56,60 @@ body {
   }
 }
 
-div {
-  background-color: rgba($color-secondary, 0.5);
-  width: 80vw;
-  height: 50vw;
+.site-header {
+  background-color: $color-primary;
+  width: 100%;
+  padding: 2rem;
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    color: $color-secondary;
+    margin: 2rem 0;
+    line-height: 0;
+  }
 }
+
+
+.cocktail {
+  margin: 2rem 4rem;
+  padding: 4rem;
+  border-radius: 16px;
+  background-color: rgba($color-secondary, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  &__title {
+    font-size: 2rem;
+  }
+  &__image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  &__glass {
+    font-weight: bold;
+  }
+  &__glass span {
+    font-weight: normal;
+  }
+  &__ingredients-section {
+    display: flex;
+  }
+  &__ingredients{
+
+  }
+  &__ingredient{
+    padding: 1rem;
+  }
+  &__measurement{
+  }
+  &__measure {
+    padding: 1rem;
+  }
+ }
 
 @media (min-width: $desktop-width) {
   div {
